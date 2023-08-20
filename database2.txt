@@ -1,0 +1,48 @@
+use EMS;
+create table employee(employeeid varchar(56),empname varchar(78),empdob date,gender varchar(78),email varchar(67),Position varchar(78),
+phonenumber varchar(78),primary key(employeeid));
+insert into employee values("E001","Krishnan","1999-02-01","Male","pad56e@gmail.com","Web Developer","7829538916");
+insert into employee values("E002","Barath","1983-09-26","Male","bardg345@gmail.com","Data Analyst","8290156827");
+insert into employee values("E003","Kalyani","1998-06-24","Female","kal67s@gmail.com","Softwate Tester","9820457328");
+
+
+use EMS;
+create table project(pid varchar(34),pname varchar(67),Duedate date,status varchar(56),Teammembers varchar(90));
+insert into project values("P001","e-Authentication system","2023-09-24","Inprogress","Malathy,Sivakmar,Dharshini");
+insert into project values("P002","Online auction System","2024-05-27","Inprogress","Mukesh,Pavana,Sathish");
+insert into project values("P003","News Feed App","2023-08-15","Completed","Abbas,Chimbu,Kanishka");
+
+
+use EMS;
+create table salary(empid varchar(67),empname varchar(78),Basesalary int,Bonus int,Totalsalary int);
+insert into salary values("E001","Krishnan",80000,4000,84000);
+insert into salary values("E002","Barath",90000,6000,96000);
+insert into salary values("E003","Kalyani",70000,5000,75000);
+
+use EMS;
+create table project(pid varchar(34),pname varchar(67),Duedate date,status varchar(56),Teammembers varchar(90));
+insert into project values("P001","e-Authentication system","2023-09-24","Inprogress","Malathy,Sivakmar,Dharshini");
+insert into project values("P002","Online auction System","2024-05-27","Inprogress","Mukesh,Pavana,Sathish");
+insert into project values("P003","News Feed App","2023-08-15","Completed","Abbas,Chimbu,Kanishka");
+
+
+use EMS;
+create table elogin(email varchar(89),password varchar(99),eid varchar(9));
+insert into elogin values("pac54@gmail.com","nager#123","E002);
+insert into elogin values("nafh56@gmail.com","gbvhm78","E005");
+create table adminlogin (email varchar(89),password varchar(89));
+insert into adminlogin values("kalor456@gmail.com","90gh45b");
+insert into adminlogin values("lafrt45@gmail.com","0ihbbt5");
+
+use EMS;
+create table Attendance(empid varchar(89),empname varchar(56),Intime datetime,projectname varchar(45),dailyactivity varchar(67),Outtime datetime);
+insert into Attendance values("E009","Monisha","2023-08-08 09:30:00","Symbol Reconginition","Develop a code","2023-08-08 22:30:00");
+insert into Attendance values("E008","Saranya","2023-08-08 10:30:00","Crime rate prediction","Collect dataset","2023-08-08 23:45:00");
+
+use EMS;
+create table department(did varchar(89),dname varchar(78),noofemployees int,Members varchar(99));
+insert into department values("D001","Development",67,"Preethi,Sushant,Rohit,Monisha,Parthiban......");
+insert into department values("D002","Support Team",13,"Prasanth,Nandhini,Sivaraj,Ramitha.....")
+
+use EMS;
+create table empleave(empname varchar(89),startdate date,enddate date,totaldays int,Reason varchar(78),status varchar(78),empid varchar(45));
